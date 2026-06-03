@@ -1,0 +1,39 @@
+++ riscv-common.cc
+++ Reference
+{"xventanacondops", ISA_SPEC_CLASS_NONE, 1, 0},
+{"x_cflag", ISA_SPEC_CLASS_NONE, 1, 0}, 
+{"x_cflag", ISA_SPEC_CLASS_NONE, 1, 0},
+{"x_cflag", ISA_SPEC_CLASS_NONE, 1, 0),
+/* Terminate the list...*/
+(NULL, ISA_SPEC_CLASS_NONE, 0, 0}
+};
+
+++ Reference
+{"xventanacondops", &gcc_options::x_riscv_xventana_subext, MASK_XVENTANACONDOPS},
+
+{"x_cflag", &gcc_options::x_riscv_x_cflag_subext, MASK_X_cflag}, 
+{"x_cflag", &gcc_options::x_riscv_x_cflag_subext, MASK_X_cflag), 
+{"x_cflag", &gcc_options::x_riscv_x_cflag_subext, MASK_X_cflag},
+{NULL, NULL, 0} 
+};
+
+++ riscv_opt.c
+++ Reference
+Mask (XVENTANACONDOPS) Var (riscv_xventana_subext)
+
+TargetVariable
+int riscv_x_cflag_subext
+Mask (X_cflag) Var(riscv_x_cflag_subext) 
+
+TargetVariable
+int riscv_x_cflag_subext
+Mask (X_cflag) Var(riscv_x_cflag_subext)
+
+TargetVariable
+int riscv_x_cflag_subext
+Mask (X_cflag) Var (riscv x_cflag_subext)
+
+Enum
+Name (isa_spec_class) Type (enum riscv_isa_spec_class)
+Supported ISA specs (for use with the -misa-spec = option):
+
